@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}
+Homepage
+{% endblock  %}
+
+{% block content %}
+    <h2>All employee's profiles list</h2>
+    <ul>
+        {% for employee  in employees %}
+        <li>
+            <a href="{% url 'employee_profile' employee.pk %}">{{employee.name}} </a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    
+{% endblock  %}

@@ -1,0 +1,48 @@
+
+body{
+    background-color: #2C2C2C;
+    color: #b8e080;
+    font-size: 22px;
+}
+nav{
+    background-color:#a72b08;
+    height: 100px;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:20px;
+    color: white;
+    gap:500 px;
+    font-size: 22px;
+}
+a{
+    color: #D8D2C2;
+    text-decoration: none;
+}
+.div-home{
+    width: 100px;
+    color: white;
+}
+
+.div-add{
+    width: 100px;
+    color: white;
+}
+.div-logout{
+    width:100px ;
+}
+
+.navd
+{
+    padding: 15px;
+}
+.navd:hover{
+    font-style: italic;
+    font-size: 26px;
+}
+li:hover
+{
+    font-style: italic;
+    font-size: 26px;
+}

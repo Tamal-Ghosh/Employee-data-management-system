@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %}Employee profile{% endblock  %}
+
+{% block content %}
+<h1>Hello, {{employee.name}}</h1>
+<h2>Your profile</h2>
+<p><strong>Name:</strong> {{employee.name}}</p>
+<p><strong>Address:</strong> {{employee.address}}</p>
+<p><strong>Phone Number:</strong> {{employee.phone_number}}</p>
+<p><strong>Salary:</strong> {{employee.salary}}</p>
+<p><strong>Designation:</strong> {{employee.designation}}</p>
+<p><strong>Short description:</strong> {{employee.short_description}}</p>
+<a href="{% url 'delete_employee_info' employee.pk %}">
+    <button type="submit">Delete</button>
+</a>
+<br>
+<a href="{% url "update" employee.pk %}">
+    <button type="submit">Update info</button> 
+</a>
+{% endblock  %}

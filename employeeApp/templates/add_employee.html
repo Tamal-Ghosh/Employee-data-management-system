@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title  %}
+Add Employee
+{% endblock  %}
+
+{% block content %}
+<h1>Add a new employee</h1>
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+
+    <p>
+        <button type="submit">Save</button>
+    </p>
+</form>
+{% endblock  %}
