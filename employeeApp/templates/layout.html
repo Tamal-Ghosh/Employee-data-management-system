@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock  %}</title>
     {% load static %}
-    {% comment %} <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css"> {% endcomment %}
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
@@ -16,6 +16,9 @@
             
         <div class="div-add navd">
             <a class="add_employee navd" href="{% url "add_employee" %}">Add employee</a> 
+        </div>
+        <div class="div-update navd">
+            <a href="{% url "update_page" %}">Update/Delete</a>
         </div>
         <div class="div-logout navd">
             <a href="{% url "logout" %}">Logout</a>

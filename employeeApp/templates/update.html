@@ -3,10 +3,12 @@
 {% block content %}
 
 <h1>Employee information update form</h1>
-<form method="post">
-    {% csrf_token %}
-    {{form.as_p}}
-    <button type="submit">Submit</button>
-
+<div class="form-group">
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
 {% endblock  %}

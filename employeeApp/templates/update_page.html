@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}
+Update{% endblock  %}
+
+{% block content %}
+<h2>All employee's profiles list</h2>
+    <ul>
+        {% for employee  in employees %}
+        <li>
+            <a href="{% url 'employee_profile' employee.pk %}">{{employee.name}} </a> |<a href="{% url 'delete_employee_info' employee.pk %}"><span class="update-link">Delete
+            </span></a> | <a href="{% url "update" employee.pk %}"><span class="update-link">Update
+            </span></a>
+        </li>
+        {% endfor %}
+    </ul>
+
+
+
+{% endblock  %}

@@ -71,3 +71,7 @@ def log_out(request):
     logout(request)
     return redirect('login')
 
+@login_required
+def update_page(request):
+    employees=Employee_info.objects.all();
+    return render (request,"update_page.html",{"employees":employees})
